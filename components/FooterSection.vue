@@ -57,11 +57,7 @@
 </script>
 
 <style>
-.router-link-active {
-    background-color: blue;
-}
+.router-link-active {}
 
-.link:hover {
-    background-color: red;
-}
+.router-link:hover {}
 </style>
