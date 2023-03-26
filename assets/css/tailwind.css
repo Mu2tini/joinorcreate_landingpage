@@ -3,9 +3,11 @@
 @tailwind utilities;
 
 @layer components {
-
-}
-
-.router-link-active {
-        @apply bg-red
+    .router-link-active {
+        @apply text-teal-800;
     }
+
+    h3 {
+        @apply text-2xl;
+    }
+}

@@ -25,6 +25,7 @@ const events = ref<Array<EventCardModel>>([
         name: "Anders Karlsson",
         tag: "Sports, Fotboll",
         eventImage: "images/football.png",
+        class: 'joc-left-border-red'
     },
     {
         id: 2,
@@ -34,6 +35,7 @@ const events = ref<Array<EventCardModel>>([
         name: "Niklas Antonsson",
         tag: "Sports, Fotboll",
         eventImage: "images/concert.png",
+        class: 'joc-left-border-green'
     },
     {
         id: 3,
@@ -43,6 +45,7 @@ const events = ref<Array<EventCardModel>>([
         name: "Fredrik Nilsson",
         tag: "Sports, Fotboll",
         eventImage: "images/bicycle.png",
+        class: 'joc-left-border-grey'
     },
 ])
 </script>

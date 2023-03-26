@@ -12,7 +12,8 @@
                         <span class="font-medium">Snabbaste</span> sättet
                         att hitta
                     </h3>
-                    <h3 class="text-white text-xl font-light">och organisera event du gillar!</h3>
+                    <h3 class="text-white text-xl font-light">och organisera event du gillar.<br> Med <span
+                            class="font-medium">Rörelse</span> i fokus!</h3>
                 </div>
             </div>
             <div class="w-full sm:w-1/4 flex justify-center items-center h-full text-white">
@@ -23,7 +24,7 @@
                             <NuxtLink class="link" to="/">Start</NuxtLink>
                         </li>
                         <li>
-                            <NuxtLink class="link" to="/about-us">Om Oss</NuxtLink>
+                            <NuxtLink class="link" to="/om-oss">Om Oss</NuxtLink>
                         </li>
                         <li>
                             <NuxtLink class="link" to="/faq">FAQ</NuxtLink>
@@ -37,13 +38,13 @@
                     <h3 class="mb-4 text-xl">Övrigt</h3>
                     <ul>
                         <li>
-                            <NuxtLink class="link" to="/blog">Blog</NuxtLink>
+                            <NuxtLink class="link" to="/blogg">Blog</NuxtLink>
                         </li>
                         <li>
-                            <NuxtLink class="link" to="/career">Karriär</NuxtLink>
+                            <NuxtLink class="link" to="/karriar">Karriär</NuxtLink>
                         </li>
                         <li>
-                            <NuxtLink class="link" to="/privacy-policy">Användarvillkor</NuxtLink>
+                            <NuxtLink class="link" to="/anvandarvillkor">Användarvillkor</NuxtLink>
                         </li>
                     </ul>
                 </div>

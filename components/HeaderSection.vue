@@ -1,10 +1,10 @@
 <template>
     <header aria-label="Site Header" style="background-color: #2AC680;">
-        <div class="mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex h-16 items-center justify-between">
+        <div class="mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center h-full">
+            <div class="flex h-full items-center justify-between">
                 <div class="md:flex md:items-center md:gap-12">
                     <a href="/">
-                        <img src="~assets/images/joc-logo.png" class="w-16 h-16 mt-4" />
+                        <img src="~assets/images/joc-logo.png" class="w-14 h-14 my-4" />
                     </a>
                 </div>
 

@@ -12,7 +12,8 @@
                         <span class="font-medium">Snabbaste</span> sättet
                         att hitta
                     </h3>
-                    <h3 class="text-white text-3xl sm:text-4xl font-light">och organisera event du gillar!</h3>
+                    <h3 class="text-white text-3xl sm:text-4xl font-light">och organisera event du gillar.<br> Med <span
+                            class="font-medium">Rörelse</span> i fokus!</h3>
                     <div></div>
                 </div>
             </div>
