@@ -21,31 +21,35 @@ const events = ref<Array<EventCardModel>>([
         id: 1,
         title: "Spela fotboll",
         creatorImage: "images/person1.png",
-        location: "",
+        location: "Bangatan 6, 722 26 Västerås",
         name: "Anders Karlsson",
         tag: "Sports, Fotboll",
         eventImage: "images/football.png",
-        class: 'joc-left-border-red'
+        class: 'joc-left-border-red',
+        time: "12:00 - 14:00"
     },
     {
         id: 2,
-        title: "Spela fotboll",
-        creatorImage: "images/person2.png",
-        location: "",
-        name: "Niklas Antonsson",
-        tag: "Sports, Fotboll",
-        eventImage: "images/concert.png",
-        class: 'joc-left-border-green'
+        title: "Barnlek i parken för föräldralediga",
+        creatorImage: "images/person5.png",
+        location: "Skolgatan , 745 31 Enköping",
+        name: "Anna Johansson",
+        tag: "Barnlek, Spontant",
+        eventImage: "images/kids-playing-park2.jpg",
+        class: 'joc-left-border-green',
+        time: "9:00 - 10:00"
+
     },
     {
         id: 3,
-        title: "Spela fotboll",
+        title: "Terrängcykling",
         creatorImage: "images/person3.png",
-        location: "",
+        location: "Bredsandsvägen 22, 749 48 Enköping",
         name: "Fredrik Nilsson",
-        tag: "Sports, Fotboll",
+        tag: "Cykla, Spontant",
         eventImage: "images/bicycle.png",
-        class: 'joc-left-border-grey'
+        class: 'joc-left-border-grey',
+        time: "15:00 - 17:00"
     },
 ])
 </script>

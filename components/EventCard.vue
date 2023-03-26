@@ -4,9 +4,11 @@
             <img :src="event.creatorImage" class="w-8 rounded-full mx-3" alt="Avatar" />
             <span>{{ event.name }}</span>
         </div>
-        <img alt="Football" :src="`${event.eventImage}`" class="h-40 w-full object-cover" />
+
+        <EventImage :title="event.title" :background-image-url="event.eventImage" :tag="event.tag">
+        </EventImage>
         <div class="p-4 sm:p-6" :class="event.class">
-            <time datetime="2022-10-10" class="block text-xs text-gray-500">
+            <!-- <time datetime="2022-10-10" class="block text-xs text-gray-500">
                 10th Oct 2022
             </time>
 
@@ -19,7 +21,26 @@
             <p class="mt-2 text-sm leading-relaxed text-gray-500 line-clamp-3">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
                 dolores
-            </p>
+            </p> -->
+            <div class="flex items-center mb-4">
+                <Icon name="ic:baseline-access-time" size="20px" color="grey" />
+                <div class="ml-4">
+                    <div class="mt-0.5 text-base text-gray-900">
+                        {{ futureDate() }}
+                    </div>
+                    <div class="block text-sm text-gray-500">
+                        Kl: {{ event.time }}
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <Icon name="ic:baseline-location-on" size="20px" color="grey" />
+                <div class="ml-4">
+                    <div class="mt-0.5 text-base text-gray-900">
+                        {{ event.location }}
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -27,10 +48,13 @@
 <script setup lang="ts">
 import { PropType } from 'vue'
 import { EventCardModel } from "@/models/models"
-
+import { futureDate } from '@/utils/date-functions'
 const props = defineProps({
     event: { type: Object as PropType<EventCardModel>, required: true },
 })
+
+
+
 </script>
 
 <style scoped>

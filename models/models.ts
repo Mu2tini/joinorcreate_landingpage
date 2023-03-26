@@ -6,7 +6,8 @@ interface EventCardModel {
     location: string,
     creatorImage: string,
     eventImage: string,
-    class: string
+    class: string,
+    time: string
 }
 
 interface TestimonalCardModel {
