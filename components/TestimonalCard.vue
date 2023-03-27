@@ -1,8 +1,7 @@
 <template>
     <div
         class="p-6 overflow-hidden rounded-lg shadow-md transition hover:shadow-lg w-96 border-2 border-green-500 bg-white flex flex-col gap-6">
-        <p class="italic text-lg">"So cool that an event can be in 3 different states and will only occur if the minimum
-            participants is met."</p>
+        <p class="italic text-lg">"{{ testimonal.testimonal }}"</p>
         <div class="flex">
             <img v-for="count in 5" src="~/assets/icons/star.svg" :key="count" />
         </div>

@@ -52,13 +52,3 @@
         </div>
     </div>
 </template>
-
-<script setup lang="ts">
-
-</script>
-
-<style>
-.router-link-active {}
-
-.router-link:hover {}
-</style>

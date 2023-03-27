@@ -8,20 +8,6 @@
         <EventImage :title="event.title" :background-image-url="event.eventImage" :tag="event.tag">
         </EventImage>
         <div class="p-4 sm:p-6" :class="event.class">
-            <!-- <time datetime="2022-10-10" class="block text-xs text-gray-500">
-                10th Oct 2022
-            </time>
-
-            <a href="#">
-                <h3 class="mt-0.5 text-lg text-gray-900">
-                    How to position your furniture for positivity
-                </h3>
-            </a>
-
-            <p class="mt-2 text-sm leading-relaxed text-gray-500 line-clamp-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                dolores
-            </p> -->
             <div class="flex items-center mb-4">
                 <Icon name="ic:baseline-access-time" size="20px" color="grey" />
                 <div class="ml-4">

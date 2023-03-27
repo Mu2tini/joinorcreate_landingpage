@@ -23,7 +23,7 @@ const events = ref<Array<EventCardModel>>([
         creatorImage: "images/person1.png",
         location: "Bangatan 6, 722 26 Västerås",
         name: "Anders Karlsson",
-        tag: "Sports, Fotboll",
+        tag: "Fotboll, Spontant",
         eventImage: "images/football.png",
         class: 'joc-left-border-red',
         time: "12:00 - 14:00"

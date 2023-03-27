@@ -8,12 +8,12 @@
                         <span class="text-teal-800">Or</span>
                         <span class="text-white">Create</span>
                     </h1>
-                    <h3 class="text-white text-3xl sm:text-4xl font-light"><span class="font-medium">Enklaste</span> och
+                    <div class="text-white text-3xl sm:text-4xl font-light"><span class="font-medium">Enklaste</span> och
                         <span class="font-medium">Snabbaste</span> sättet
                         att hitta
-                    </h3>
-                    <h3 class="text-white text-3xl sm:text-4xl font-light">och organisera event du gillar.<br> Med <span
-                            class="font-medium">Rörelse</span> i fokus!</h3>
+                    </div>
+                    <div class="text-white text-3xl sm:text-4xl font-light">och organisera event du gillar.<br> Med <span
+                            class="font-medium">Rörelse</span> i fokus!</div>
                     <div></div>
                 </div>
             </div>

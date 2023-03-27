@@ -19,21 +19,21 @@ import { TestimonalCardModel } from '~/models/models'
 const testimonals = ref<Array<TestimonalCardModel>>([
     {
         id: 1,
-        testimonal: "Spela fotboll",
-        creatorImage: "images/person3.png",
-        name: "Fredrik Nilsson",
+        creatorImage: "images/person6.png",
+        name: "Samule Linderoth",
+        testimonal: "Så häftigt att aktiviteter kan vara i 3 olika stadier och bara kommer att inträffa om det minsta antalet deltagare uppnås"
     },
     {
         id: 2,
-        testimonal: "Spela fotboll",
-        creatorImage: "images/person3.png",
-        name: "Fredrik Nilsson",
+        testimonal: "Jag älskar att jag kan få exakt den typen av människor jag söker till mina event eftersom de måste uppfylla eventkraven",
+        creatorImage: "images/person4.png",
+        name: "Linda Pettersson",
     },
     {
         id: 3,
-        testimonal: "Spela fotboll",
-        creatorImage: "images/person3.png",
-        name: "Fredrik Nilsson",
+        testimonal: "Oavsett var jag är så hittar jag alltid en aktivitet att delta i genom JoinOrCreate",
+        creatorImage: "images/person2.png",
+        name: "Alvaro Rodriguez",
     },
 ])
 </script>

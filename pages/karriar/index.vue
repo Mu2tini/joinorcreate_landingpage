@@ -3,24 +3,24 @@
     <section class="py-28">
         <div class="max-w-screen-lg mx-auto px-4 md:px-8">
             <div class="max-w-md">
-                <h1 class="text-gray-800 text-2xl font-extrabold sm:text-3xl">Lediga Tjänster</h1>
+                <h1 class="text-teal-800 text-3xl font-bold sm:text-3xl">Lediga Tjänster</h1>
                 <p class="text-gray-600 mt-2">Vi söker för närvarande talangfulla mjukvaruutvecklare, designers och
                     eventskapare för att
                     hjälpa oss i våra uppdrag och för att växa.</p>
             </div>
             <ul class="mt-12 divide-y space-y-3">
 
-                <li v-for="(item, idx) in members" :key="idx"
+                <li v-for="(item, idx) in data" :key="idx"
                     class="px-4 py-5 duration-150 hover:border-white hover:rounded-xl hover:bg-gray-50">
-                    <a :href="item.path" class="space-y-3">
+                    <NuxtLink :to="`/karriar/${item.slug}`" class="space-y-3">
                         <div class="flex items-center gap-x-3">
                             <div>
-                                <span class="block text-sm text-teal-600 font-medium">{{ item.company_name }}</span>
-                                <h3 class="text-base text-gray-800 font-semibold mt-1">{{ item.job_title }}</h3>
+                                <span class="block text-sm text-teal-600 font-medium">{{ item.company }}</span>
+                                <h3 class="text-base text-gray-800 font-semibold mt-1">{{ item.title }}</h3>
                             </div>
                         </div>
                         <p class="text-gray-600 sm:text-sm">
-                            {{ item.job_description }}
+                            {{ item.description }}
                         </p>
                         <div class="text-sm text-gray-600 flex items-center gap-6">
                             <span class="flex items-center gap-2">
@@ -46,7 +46,7 @@
                                 {{ item.location }}
                             </span>
                         </div>
-                    </a>
+                    </NuxtLink>
                 </li>
 
             </ul>
@@ -55,40 +55,6 @@
 </template>
 
 <script setup>
+const { data } = await useAsyncData(() => queryContent(`/karriar`).find())
 
-const members = [
-    {
-        company_name: "JoinOrCreate",
-        job_title: "Full-stack utvecklare",
-        job_description: "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-        job_type: "Heltid",
-        location: "Distans",
-        path: "javascript:void(0)"
-    }, {
-        company_name: "JoinOrCreate",
-        job_title: "Designer",
-        job_description: "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
-        job_type: "Heltid",
-        location: "Distans",
-        path: "javascript:void(0)"
-    }, {
-        company_name: "JoinOrCreate",
-        job_title: "Eventskapare",
-        job_description: "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
-        job_type: "Heltid",
-        location: "Stockholm och Västerås",
-        path: "javascript:void(0)",
-    }
-]
-
-
-const answerElRef = ref()
-const state = ref(false)
-const answerH = ref('0px')
-
-const handleOpenAnswer = () => {
-    const answerElH = answerElRef.current.childNodes[0].offsetHeight
-    setState(!state)
-    setAnswerH(`${answerElH + 20}px`)
-}
 </script>
