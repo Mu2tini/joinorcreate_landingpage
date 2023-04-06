@@ -55,6 +55,9 @@
 </template>
 
 <script setup>
+useMeta({
+    title: 'JoinOrCreate - Karriär'
+})
 const { data } = await useAsyncData(() => queryContent(`/karriar`).find())
 
 </script>

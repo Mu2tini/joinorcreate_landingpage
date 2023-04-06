@@ -16,6 +16,9 @@
 </template>
 
 <script setup>
+useMeta({
+    title: 'JoinOrCreate - Användarvillkor'
+})
 const { data } = await useAsyncData(() => queryContent(`/anvandarvillkor`).findOne())
 
 </script>

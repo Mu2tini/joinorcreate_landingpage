@@ -17,5 +17,8 @@
 </template>
 
 <script setup>
+useMeta({
+    title: 'JoinOrCreate - Om Oss'
+})
 const { data } = await useAsyncData(() => queryContent(`/om-oss`).findOne())
 </script>

@@ -28,5 +28,8 @@
     </section>
 </template>
 <script setup>
+useMeta({
+    title: 'JoinOrCreate - Blogg'
+})
 const { data } = await useAsyncData(() => queryContent(`/blogg`).find())
 </script>

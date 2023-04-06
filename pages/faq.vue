@@ -16,6 +16,9 @@
 
 <script setup>
 import FaqsCard from '~~/components/FAQ/FaqsCard.vue'
+useMeta({
+    title: 'JoinOrCreate - FAQ'
+})
 const faqsList = [
     {
         q: "Hur installerar jag JoinOrCreate som en app?",
