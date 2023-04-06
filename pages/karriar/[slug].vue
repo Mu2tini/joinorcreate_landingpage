@@ -43,7 +43,15 @@ const route = useRoute()
 const { data } = await useAsyncData(() => queryContent(`/karriar/${route.params.slug}`).findOne())
 useSeoMeta({
     title: `Karriär - ${data.title}`,
-    description: () => `Enklaste och Snabbaste sättet att organisera och hitta Event du gillar`
+    description: () => data.description
+})
+useServerSeoMeta({
+    title: `Karriär - ${data.title}`,
+    ogTitle: `Karriär - ${data.title}`,
+    description: `${data.description}`,
+    ogDescription: `${data.description}`,
+    ogImage: 'https://joinorcreate.se/images/JoC_Background.png',
+    twitterCard: 'summary_large_image',
 })
 </script>
 

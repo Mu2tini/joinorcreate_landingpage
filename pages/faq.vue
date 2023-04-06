@@ -20,6 +20,15 @@ useSeoMeta({
     title: 'JoinOrCreate - FAQ',
     description: () => `Enklaste och Snabbaste sättet att organisera och hitta Event du gillar`
 })
+
+useServerSeoMeta({
+    title: 'JoinOrCreate - FAQ',
+    ogTitle: 'JoinOrCreate - FAQ',
+    description: 'Enklaste och Snabbaste sättet att organisera och hitta Event du gillar',
+    ogDescription: 'Enklaste och Snabbaste sättet att organisera och hitta Event du gillar',
+    ogImage: 'https://joinorcreate.se/images/JoC_Background.png',
+    twitterCard: 'summary_large_image',
+})
 const faqsList = [
     {
         q: "Hur installerar jag JoinOrCreate som en app?",

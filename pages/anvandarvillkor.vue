@@ -20,6 +20,15 @@ useSeoMeta({
     title: 'JoinOrCreate - Användarvillkor',
     description: () => `Enklaste och Snabbaste sättet att organisera och hitta Event du gillar`
 })
+
+useServerSeoMeta({
+    title: 'JoinOrCreate - Användarvillkor',
+    ogTitle: 'JoinOrCreate - Användarvillkor',
+    description: 'Enklaste och Snabbaste sättet att organisera och hitta Event du gillar',
+    ogDescription: 'Enklaste och Snabbaste sättet att organisera och hitta Event du gillar',
+    ogImage: 'https://joinorcreate.se/images/JoC_Background.png',
+    twitterCard: 'summary_large_image',
+})
 const { data } = await useAsyncData(() => queryContent(`/anvandarvillkor`).findOne())
 
 </script>

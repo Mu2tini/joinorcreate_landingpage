@@ -59,6 +59,14 @@ useSeoMeta({
     title: 'JoinOrCreate - Karriär',
     description: () => `Enklaste och Snabbaste sättet att organisera och hitta Event du gillar`
 })
+useServerSeoMeta({
+    title: 'JoinOrCreate - Karriär',
+    ogTitle: 'JoinOrCreate - Karriär',
+    description: 'Enklaste och Snabbaste sättet att organisera och hitta Event du gillar',
+    ogDescription: 'Enklaste och Snabbaste sättet att organisera och hitta Event du gillar',
+    ogImage: 'https://joinorcreate.se/images/JoC_Background.png',
+    twitterCard: 'summary_large_image',
+})
 const { data } = await useAsyncData(() => queryContent(`/karriar`).find())
 
 </script>
