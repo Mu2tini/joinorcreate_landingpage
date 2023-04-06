@@ -11,12 +11,12 @@
                 <div class="flex items-center gap-4">
                     <div class="flex gap-4">
                         <a class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow"
-                            href="https://joinorcreate-dev.web.app/#/auth/login">
+                            href="https://app.joinorcreate.se/#/auth/login">
                             Logga In
                         </a>
 
                         <a class="rounded-md bg-white px-5 py-2.5 text-sm font-medium text-teal-600"
-                            href="https://joinorcreate-dev.web.app/#/auth/register">
+                            href="https://app.joinorcreate.se/#/auth/register">
                             Registrera
                         </a>
                     </div>

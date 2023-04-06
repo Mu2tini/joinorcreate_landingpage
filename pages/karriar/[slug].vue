@@ -41,7 +41,7 @@
 import { useRoute } from 'vue-router'
 const route = useRoute()
 const { data } = await useAsyncData(() => queryContent(`/karriar/${route.params.slug}`).findOne())
-useSeoMeta({
+useServerSeoMeta({
     title: () => `Karriär - ${data.title}`,
     ogTitle: () => `Karriär - ${data.title}`,
     description: () => `${data.description}`,

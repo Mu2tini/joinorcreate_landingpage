@@ -22,9 +22,9 @@
 import { useRoute } from 'vue-router'
 const route = useRoute()
 const { data } = await useAsyncData(() => queryContent(`/blogg/${route.params.slug}`).findOne())
-useSeoMeta({
-    title: () => `Karriär - ${data.title}`,
-    ogTitle: () => `Karriär - ${data.title}`,
+useServerSeoMeta({
+    title: () => `Blogg - ${data.title}`,
+    ogTitle: () => `Blogg - ${data.title}`,
     description: () => `${data.description}`,
     ogDescription: () => `${data.description}`,
     ogImage: `https://joinorcreate.se/${data.img}`,
