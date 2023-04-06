@@ -22,7 +22,9 @@
 import { useRoute } from 'vue-router'
 const route = useRoute()
 const { data } = await useAsyncData(() => queryContent(`/blogg/${route.params.slug}`).findOne())
-
+useMeta({
+    title: `Blogg - ${data.title}`
+})
 </script>
 
 <style scoped>

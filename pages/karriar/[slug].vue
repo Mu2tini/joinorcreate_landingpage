@@ -41,7 +41,9 @@
 import { useRoute } from 'vue-router'
 const route = useRoute()
 const { data } = await useAsyncData(() => queryContent(`/karriar/${route.params.slug}`).findOne())
-
+useMeta({
+    title: `Karriär - ${data.title}`
+})
 </script>
 
 <style scoped>
