@@ -16,8 +16,9 @@
 </template>
 
 <script setup>
-useMeta({
-    title: 'JoinOrCreate - Användarvillkor'
+useSeoMeta({
+    title: 'JoinOrCreate - Användarvillkor',
+    description: () => `Enklaste och Snabbaste sättet att organisera och hitta Event du gillar`
 })
 const { data } = await useAsyncData(() => queryContent(`/anvandarvillkor`).findOne())
 

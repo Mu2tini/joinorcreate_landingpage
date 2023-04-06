@@ -22,8 +22,9 @@
 import { useRoute } from 'vue-router'
 const route = useRoute()
 const { data } = await useAsyncData(() => queryContent(`/blogg/${route.params.slug}`).findOne())
-useMeta({
-    title: `Blogg - ${data.title}`
+useSeoMeta({
+    title: `Blogg - ${data.title}`,
+    description: () => `Enklaste och Snabbaste sättet att organisera och hitta Event du gillar`
 })
 </script>
 

@@ -41,8 +41,9 @@
 import { useRoute } from 'vue-router'
 const route = useRoute()
 const { data } = await useAsyncData(() => queryContent(`/karriar/${route.params.slug}`).findOne())
-useMeta({
-    title: `Karriär - ${data.title}`
+useSeoMeta({
+    title: `Karriär - ${data.title}`,
+    description: () => `Enklaste och Snabbaste sättet att organisera och hitta Event du gillar`
 })
 </script>
 

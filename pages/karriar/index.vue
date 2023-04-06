@@ -55,8 +55,9 @@
 </template>
 
 <script setup>
-useMeta({
-    title: 'JoinOrCreate - Karriär'
+useSeoMeta({
+    title: 'JoinOrCreate - Karriär',
+    description: () => `Enklaste och Snabbaste sättet att organisera och hitta Event du gillar`
 })
 const { data } = await useAsyncData(() => queryContent(`/karriar`).find())
 

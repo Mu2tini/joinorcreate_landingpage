@@ -17,8 +17,9 @@
 </template>
 
 <script setup>
-useMeta({
-    title: 'JoinOrCreate - Om Oss'
+useSeoMeta({
+    title: 'JoinOrCreate - Om Oss',
+    description: () => `Enklaste och Snabbaste sättet att organisera och hitta Event du gillar`
 })
 const { data } = await useAsyncData(() => queryContent(`/om-oss`).findOne())
 </script>

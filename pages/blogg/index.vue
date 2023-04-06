@@ -28,8 +28,9 @@
     </section>
 </template>
 <script setup>
-useMeta({
-    title: 'JoinOrCreate - Blogg'
+useSeoMeta({
+    title: 'JoinOrCreate - Blogg',
+    description: () => `Enklaste och Snabbaste sättet att organisera och hitta Event du gillar`
 })
 const { data } = await useAsyncData(() => queryContent(`/blogg`).find())
 </script>

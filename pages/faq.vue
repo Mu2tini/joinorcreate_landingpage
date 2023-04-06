@@ -16,8 +16,9 @@
 
 <script setup>
 import FaqsCard from '~~/components/FAQ/FaqsCard.vue'
-useMeta({
-    title: 'JoinOrCreate - FAQ'
+useSeoMeta({
+    title: 'JoinOrCreate - FAQ',
+    description: () => `Enklaste och Snabbaste sättet att organisera och hitta Event du gillar`
 })
 const faqsList = [
     {
