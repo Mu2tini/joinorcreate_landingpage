@@ -10,17 +10,13 @@
 <script setup>
 useSeoMeta({
     title: 'JoinOrCreate - Start',
-    description: () => `Enklaste och Snabbaste sättet att organisera och hitta Event du gillar`
-})
-
-useServerSeoMeta({
-    title: 'JoinOrCreate - Start',
     ogTitle: 'JoinOrCreate - Start',
     description: 'Enklaste och Snabbaste sättet att organisera och hitta Event du gillar',
     ogDescription: 'Enklaste och Snabbaste sättet att organisera och hitta Event du gillar',
     ogImage: 'https://joinorcreate.se/images/JoC_Background.png',
     twitterCard: 'summary_large_image',
 })
+
 </script>
 
 <style lang="scss" scoped></style>

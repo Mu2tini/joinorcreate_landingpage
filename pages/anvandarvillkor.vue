@@ -18,11 +18,6 @@
 <script setup>
 useSeoMeta({
     title: 'JoinOrCreate - Användarvillkor',
-    description: () => `Enklaste och Snabbaste sättet att organisera och hitta Event du gillar`
-})
-
-useServerSeoMeta({
-    title: 'JoinOrCreate - Användarvillkor',
     ogTitle: 'JoinOrCreate - Användarvillkor',
     description: 'Enklaste och Snabbaste sättet att organisera och hitta Event du gillar',
     ogDescription: 'Enklaste och Snabbaste sättet att organisera och hitta Event du gillar',

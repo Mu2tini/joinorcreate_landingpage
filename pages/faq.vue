@@ -18,11 +18,6 @@
 import FaqsCard from '~~/components/FAQ/FaqsCard.vue'
 useSeoMeta({
     title: 'JoinOrCreate - FAQ',
-    description: () => `Enklaste och Snabbaste sättet att organisera och hitta Event du gillar`
-})
-
-useServerSeoMeta({
-    title: 'JoinOrCreate - FAQ',
     ogTitle: 'JoinOrCreate - FAQ',
     description: 'Enklaste och Snabbaste sättet att organisera och hitta Event du gillar',
     ogDescription: 'Enklaste och Snabbaste sättet att organisera och hitta Event du gillar',

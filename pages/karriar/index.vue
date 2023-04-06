@@ -57,10 +57,6 @@
 <script setup>
 useSeoMeta({
     title: 'JoinOrCreate - Karriär',
-    description: () => `Enklaste och Snabbaste sättet att organisera och hitta Event du gillar`
-})
-useServerSeoMeta({
-    title: 'JoinOrCreate - Karriär',
     ogTitle: 'JoinOrCreate - Karriär',
     description: 'Enklaste och Snabbaste sättet att organisera och hitta Event du gillar',
     ogDescription: 'Enklaste och Snabbaste sättet att organisera och hitta Event du gillar',
