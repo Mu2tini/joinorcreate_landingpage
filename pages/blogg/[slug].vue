@@ -22,7 +22,7 @@
 import { useRoute } from 'vue-router'
 const route = useRoute()
 const { data } = await useAsyncData(() => queryContent(`/blogg/${route.params.slug}`).findOne())
-useServerSeoMeta({
+useSeoMeta({
     title: () => `Blogg - ${data.title}`,
     ogTitle: () => `Blogg - ${data.title}`,
     description: () => `${data.description}`,
