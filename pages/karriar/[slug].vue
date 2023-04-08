@@ -42,10 +42,10 @@ import { useRoute } from 'vue-router'
 const route = useRoute()
 const { data } = await useAsyncData(() => queryContent(`/karriar/${route.params.slug}`).findOne())
 useSeoMeta({
-    title: () => `Karriär - ${data.title}`,
-    ogTitle: () => `Karriär - ${data.title}`,
-    description: () => `${data.description}`,
-    ogDescription: () => `${data.description}`,
+    title: () => `Karriär - ${data.value?.title}`,
+    ogTitle: () => `Karriär - ${data.value?.title}`,
+    description: () => `${data.value?.description}`,
+    ogDescription: () => `${data.value?.description}`,
     ogImage: 'https://joinorcreate.se/images/JoC_Background.png',
     twitterCard: 'summary_large_image',
 })

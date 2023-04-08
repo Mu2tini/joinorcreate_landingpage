@@ -24,15 +24,13 @@ import { useRoute } from 'vue-router'
 const route = useRoute()
 const { data } = await useAsyncData(() => queryContent(`/blogg/${route.params.slug}`).findOne())
 
-onMounted(() => {
-    useSeoMeta({
-        title: () => `Blogg - ${data?.title}`,
-        ogTitle: () => `Blogg - ${data?.title}`,
-        description: () => `${data?.description}`,
-        ogDescription: () => `${data?.description}`,
-        ogImage: `https://joinorcreate.se/${data?.img}`,
-        twitterCard: 'summary_large_image',
-    })
+useSeoMeta({
+    title: () => `Blogg - ${data.value?.title}`,
+    ogTitle: () => `Blogg - ${data.value?.title}`,
+    description: () => `${data.value?.description}`,
+    ogDescription: () => `${data.value?.description}`,
+    ogImage: `https://joinorcreate.se/${data.value?.img}`,
+    twitterCard: 'summary_large_image',
 })
 
 
