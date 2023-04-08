@@ -19,17 +19,23 @@
 </template>
 
 <script setup>
+import { onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 const route = useRoute()
 const { data } = await useAsyncData(() => queryContent(`/blogg/${route.params.slug}`).findOne())
-useSeoMeta({
-    title: () => `Blogg - ${data.title}`,
-    ogTitle: () => `Blogg - ${data.title}`,
-    description: () => `${data.description}`,
-    ogDescription: () => `${data.description}`,
-    ogImage: `https://joinorcreate.se/${data.img}`,
-    twitterCard: 'summary_large_image',
+
+onMounted(() => {
+    useSeoMeta({
+        title: () => `Blogg - ${data?.title}`,
+        ogTitle: () => `Blogg - ${data?.title}`,
+        description: () => `${data?.description}`,
+        ogDescription: () => `${data?.description}`,
+        ogImage: `https://joinorcreate.se/${data?.img}`,
+        twitterCard: 'summary_large_image',
+    })
 })
+
+
 </script>
 
 <style scoped>
