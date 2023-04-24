@@ -19,7 +19,6 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 const route = useRoute()
 const { data } = await useAsyncData(() => queryContent(`/blogg/${route.params.slug}`).findOne())

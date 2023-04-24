@@ -1,7 +1,7 @@
 <template>
     <div
-        class="h-[70vh] flex justify-center items-center bg-no-repeat bg-cover bg-[url('~/assets/images/JoC_Background.png')]">
-        <div class="w-full h-full backdrop-brightness-50 flex items-center">
+        class="min-h-[80vh] flex justify-center items-center bg-no-repeat bg-cover bg-[url('~/assets/images/JoC_Background.png')]">
+        <div class="w-full h-full backdrop-brightness-50 flex items-center py-20">
             <div class="w-full flex flex-col items-center p-4">
                 <div class="mb-20">
                     <h2 class="text-center text-4xl my-2 text-bold" style="color: #2AC680;">Kontakta Oss</h2>
