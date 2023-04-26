@@ -9,7 +9,7 @@
             </p>
         </div>
         <div class="mt-14 max-w-2xl mx-auto">
-            <FaqsCard v-for="(item, idx) in faqsList" :key="idx" :idx="idx" :faqsList="item" />
+            <FaqsCard v-for="(item, idx) in data" :key="idx" :idx="idx" :faqsList="item" />
         </div>
     </section>
 </template>
@@ -24,6 +24,9 @@ useSeoMeta({
     ogImage: 'https://joinorcreate.se/images/JoC_Background.png',
     twitterCard: 'summary_large_image',
 })
+
+const { data } = await useAsyncData(() => queryContent(`/faq`).find())
+
 const faqsList = [
     {
         q: "Hur installerar jag JoinOrCreate som en app?",

@@ -1,9 +1,9 @@
 <template>
     <div
-        class="min-h-[80vh] flex justify-center items-center bg-no-repeat bg-cover bg-[url('~/assets/images/JoC_Background.png')]">
-        <div class="w-full h-full backdrop-brightness-50 flex items-center py-20">
-            <div class="w-full flex flex-col items-center p-4">
-                <div class="mb-20">
+        class="min-h-[70vh] flex justify-center items-center bg-no-repeat bg-cover bg-[url('~/assets/images/JoC_Background.png')]">
+        <div class="w-full h-full backdrop-brightness-50 flex items-center">
+            <div class="w-full flex flex-col items-center py-20 px-4">
+                <div class="mb-16">
                     <h2 class="text-center text-4xl my-2 text-bold" style="color: #2AC680;">Kontakta Oss</h2>
                     <h4 class="text-center text-xl text-white">Vi vill höra från dig vad du tycker och bli bättre</h4>
                 </div>

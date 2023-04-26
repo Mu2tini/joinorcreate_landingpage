@@ -1,7 +1,7 @@
 <template>
     <div class="space-y-3 mt-5 overflow-hidden border-b" @click="handleOpenAnswer">
         <h4 class="cursor-pointer pb-5 flex items-center justify-between text-lg text-gray-700 font-medium">
-            {{ faqsList.q }}
+            {{ faqsList.title }}
             <template v-if="state">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 ml-2" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
@@ -17,7 +17,9 @@
         </h4>
         <div ref="answerElRef" class="duration-300" :style="{ height: state ? answerH : '0px' }">
             <div>
-                <p class="text-gray-500">{{ faqsList.a }}</p>
+                <p class="text-gray-500">
+                    <ContentRenderer :value="faqsList" />
+                </p>
             </div>
         </div>
     </div>
