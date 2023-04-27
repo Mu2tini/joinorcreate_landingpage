@@ -8,10 +8,10 @@ updatedAt: "2023-03-14"
 ---
 
 Den användare som skapat eventet har också möjlighet att ta bort andra användare från eventet.
-På eventdetaljeringsvyn under event krav så kan man se alla deltagare genom att klicka på sista runda knappen med ikonen <img width="30" style="display:inline" src="icons/list.png">.
+På eventdetaljeringsvyn under event krav så kan man se alla deltagare genom att klicka på sista runda knappen med ikonen <img width="30" style="display:inline" src="/icons/list.png">.
 <br>
 <br>
-<img style="max-width:320px" src="images/event-krav.png">
+<img style="max-width:320px" src="/images/event-krav.png">
 <br>
 <br>
 
@@ -19,7 +19,7 @@ Då kommer man till vyn med event deltagare. Där kan man klicka på ikonen med 
 
 <br>
 <br>
-<img style="max-width:320px" src="images/remove-user.png">
+<img style="max-width:320px" src="/images/remove-user.png">
 <br>
 <br>
 

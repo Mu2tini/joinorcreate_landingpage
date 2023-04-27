@@ -12,6 +12,6 @@ Man kommer dock inte åt den via PlayStore på Android eller AppStore på iOS ut
 
 <br>
 <br>
-<img style="max-width:600px; object-fit:contain;" src="images/devices.jpg">
+<img style="max-width:600px; object-fit:contain;" src="/images/devices.jpg">
 <br>
 <br>

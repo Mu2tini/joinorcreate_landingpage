@@ -15,6 +15,6 @@ Hösta antalet deltagare är övre gräns på antalet deltagare eventet får ha.
 
 <br>
 <br>
-<img style="max-width:320px" src="images/red-green-gray.png">
+<img style="max-width:320px" src="/images/red-green-gray.png">
 <br>
 <br>

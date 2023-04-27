@@ -1,5 +1,6 @@
 <template>
     <div>
+        <SeoKit />
         <HeaderSection />
         <div>
             <slot />
