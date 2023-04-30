@@ -20,7 +20,7 @@ const testimonals = ref<Array<TestimonalCardModel>>([
     {
         id: 1,
         creatorImage: "images/person6.png",
-        name: "Samule Linderoth",
+        name: "Samuel Linderoth",
         testimonal: "Så häftigt att aktiviteter kan vara i 3 olika stadier och bara kommer att inträffa om det minsta antalet deltagare uppnås"
     },
     {
