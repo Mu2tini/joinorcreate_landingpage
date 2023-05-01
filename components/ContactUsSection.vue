@@ -1,6 +1,6 @@
 <template>
     <div
-        class="min-h-[70vh] flex justify-center items-center bg-no-repeat bg-cover bg-[url('~/assets/images/JoC_Background.png')]">
+        class="min-h-[70vh] flex justify-center items-center bg-no-repeat bg-cover bg-center bg-[url('~/assets/images/background.jpg')]">
         <div class="w-full min-h-[70vh] backdrop-brightness-50 flex items-center">
             <div class="w-full h-full flex flex-col items-center py-20 px-4">
                 <div class="mb-16">

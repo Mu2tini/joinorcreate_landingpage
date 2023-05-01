@@ -46,7 +46,7 @@ useSeoMeta({
     ogTitle: () => `Karriär - ${data.value?.title}`,
     description: () => `${data.value?.description}`,
     ogDescription: () => `${data.value?.description}`,
-    ogImage: 'https://joinorcreate.se/images/JoC_Background.png',
+    ogImage: 'https://joinorcreate.se/images/background.jpg',
     twitterCard: 'summary_large_image',
 })
 </script>

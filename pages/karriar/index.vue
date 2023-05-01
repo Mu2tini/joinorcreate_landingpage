@@ -60,7 +60,7 @@ useSeoMeta({
     ogTitle: 'JoinOrCreate - Karriär',
     description: 'Enklaste och Snabbaste sättet att organisera och hitta Event du gillar',
     ogDescription: 'Enklaste och Snabbaste sättet att organisera och hitta Event du gillar',
-    ogImage: 'https://joinorcreate.se/images/JoC_Background.png',
+    ogImage: 'https://joinorcreate.se/images/background.jpg',
     twitterCard: 'summary_large_image',
 })
 const { data } = await useAsyncData(() => queryContent(`/karriar`).find())
