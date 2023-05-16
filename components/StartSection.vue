@@ -14,7 +14,12 @@
                     </div>
                     <div class="text-white text-3xl sm:text-4xl font-light">och organisera event du gillar.<br> Med <span
                             class="font-medium">Rörelse</span> i fokus!</div>
-                    <div></div>
+                    <div class="mt-10 flex justify-center lg:justify-start items-center gap-4">
+                        <a href="https://play.google.com/store/apps/details?id=se.joinorcreate.app" target="_blank"><img
+                                width="160" src="/images/google-play-badge.png" alt="google play badge"></a>
+                        <a href="https://app.joinorcreate.se/#/auth/login" target="_blank"><img width="160"
+                                src="/images/pwa-badge.png" alt="google play badge"></a>
+                    </div>
                 </div>
             </div>
             <div class="flex lg:justify-start justify-center flex-grow items-center" style="min-width: 300px;">
