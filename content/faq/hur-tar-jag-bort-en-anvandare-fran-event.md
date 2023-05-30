@@ -1,7 +1,7 @@
 ---
-title: Hur tar jag bort användare från eventet?
-description: Hur tar jag bort användare från eventet?
-slug: hur-tar-jag-bort-en-anvandare-fran-eventet
+title: Hur tar jag bort användare från event?
+description: Hur tar jag bort användare från event?
+slug: hur-tar-jag-bort-en-anvandare-fran-event
 author: Jeton Mustini
 createdAt: "2023-03-14"
 updatedAt: "2023-03-14"

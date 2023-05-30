@@ -13,7 +13,6 @@ export default defineNuxtConfig({
         '@nuxt/content',
         'nuxt-icon',
         'nuxt-gtag',
-        '@nuxthq/studio'
     ],
     extends: [
         'nuxt-seo-kit'
